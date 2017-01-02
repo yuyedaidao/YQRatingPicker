@@ -1,0 +1,539 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		21F6790A1E1A42CA000321C6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F679091E1A42CA000321C6 /* main.m */; };
+		21F6790D1E1A42CA000321C6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F6790C1E1A42CA000321C6 /* AppDelegate.m */; };
+		21F679101E1A42CA000321C6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F6790F1E1A42CA000321C6 /* ViewController.m */; };
+		21F679131E1A42CA000321C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21F679111E1A42CA000321C6 /* Main.storyboard */; };
+		21F679151E1A42CA000321C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21F679141E1A42CA000321C6 /* Assets.xcassets */; };
+		21F679181E1A42CA000321C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21F679161E1A42CA000321C6 /* LaunchScreen.storyboard */; };
+		21F679231E1A42CA000321C6 /* YQRatingPickerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F679221E1A42CA000321C6 /* YQRatingPickerTests.m */; };
+		21F6792E1E1A42CA000321C6 /* YQRatingPickerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F6792D1E1A42CA000321C6 /* YQRatingPickerUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		21F6791F1E1A42CA000321C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 21F678FD1E1A42C9000321C6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 21F679041E1A42C9000321C6;
+			remoteInfo = YQRatingPicker;
+		};
+		21F6792A1E1A42CA000321C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 21F678FD1E1A42C9000321C6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 21F679041E1A42C9000321C6;
+			remoteInfo = YQRatingPicker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		21F679051E1A42CA000321C6 /* YQRatingPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YQRatingPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		21F679091E1A42CA000321C6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		21F6790B1E1A42CA000321C6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		21F6790C1E1A42CA000321C6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		21F6790E1E1A42CA000321C6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		21F6790F1E1A42CA000321C6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		21F679121E1A42CA000321C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		21F679141E1A42CA000321C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		21F679171E1A42CA000321C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		21F679191E1A42CA000321C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21F6791E1E1A42CA000321C6 /* YQRatingPickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YQRatingPickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		21F679221E1A42CA000321C6 /* YQRatingPickerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YQRatingPickerTests.m; sourceTree = "<group>"; };
+		21F679241E1A42CA000321C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21F679291E1A42CA000321C6 /* YQRatingPickerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YQRatingPickerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		21F6792D1E1A42CA000321C6 /* YQRatingPickerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YQRatingPickerUITests.m; sourceTree = "<group>"; };
+		21F6792F1E1A42CA000321C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		21F679021E1A42C9000321C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21F6791B1E1A42CA000321C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21F679261E1A42CA000321C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		21F678FC1E1A42C9000321C6 = {
+			isa = PBXGroup;
+			children = (
+				21F679071E1A42CA000321C6 /* YQRatingPicker */,
+				21F679211E1A42CA000321C6 /* YQRatingPickerTests */,
+				21F6792C1E1A42CA000321C6 /* YQRatingPickerUITests */,
+				21F679061E1A42CA000321C6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		21F679061E1A42CA000321C6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				21F679051E1A42CA000321C6 /* YQRatingPicker.app */,
+				21F6791E1E1A42CA000321C6 /* YQRatingPickerTests.xctest */,
+				21F679291E1A42CA000321C6 /* YQRatingPickerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		21F679071E1A42CA000321C6 /* YQRatingPicker */ = {
+			isa = PBXGroup;
+			children = (
+				21F6790B1E1A42CA000321C6 /* AppDelegate.h */,
+				21F6790C1E1A42CA000321C6 /* AppDelegate.m */,
+				21F6790E1E1A42CA000321C6 /* ViewController.h */,
+				21F6790F1E1A42CA000321C6 /* ViewController.m */,
+				21F679111E1A42CA000321C6 /* Main.storyboard */,
+				21F679141E1A42CA000321C6 /* Assets.xcassets */,
+				21F679161E1A42CA000321C6 /* LaunchScreen.storyboard */,
+				21F679191E1A42CA000321C6 /* Info.plist */,
+				21F679081E1A42CA000321C6 /* Supporting Files */,
+			);
+			path = YQRatingPicker;
+			sourceTree = "<group>";
+		};
+		21F679081E1A42CA000321C6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				21F679091E1A42CA000321C6 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		21F679211E1A42CA000321C6 /* YQRatingPickerTests */ = {
+			isa = PBXGroup;
+			children = (
+				21F679221E1A42CA000321C6 /* YQRatingPickerTests.m */,
+				21F679241E1A42CA000321C6 /* Info.plist */,
+			);
+			path = YQRatingPickerTests;
+			sourceTree = "<group>";
+		};
+		21F6792C1E1A42CA000321C6 /* YQRatingPickerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				21F6792D1E1A42CA000321C6 /* YQRatingPickerUITests.m */,
+				21F6792F1E1A42CA000321C6 /* Info.plist */,
+			);
+			path = YQRatingPickerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		21F679041E1A42C9000321C6 /* YQRatingPicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21F679321E1A42CA000321C6 /* Build configuration list for PBXNativeTarget "YQRatingPicker" */;
+			buildPhases = (
+				21F679011E1A42C9000321C6 /* Sources */,
+				21F679021E1A42C9000321C6 /* Frameworks */,
+				21F679031E1A42C9000321C6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YQRatingPicker;
+			productName = YQRatingPicker;
+			productReference = 21F679051E1A42CA000321C6 /* YQRatingPicker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		21F6791D1E1A42CA000321C6 /* YQRatingPickerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21F679351E1A42CA000321C6 /* Build configuration list for PBXNativeTarget "YQRatingPickerTests" */;
+			buildPhases = (
+				21F6791A1E1A42CA000321C6 /* Sources */,
+				21F6791B1E1A42CA000321C6 /* Frameworks */,
+				21F6791C1E1A42CA000321C6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				21F679201E1A42CA000321C6 /* PBXTargetDependency */,
+			);
+			name = YQRatingPickerTests;
+			productName = YQRatingPickerTests;
+			productReference = 21F6791E1E1A42CA000321C6 /* YQRatingPickerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		21F679281E1A42CA000321C6 /* YQRatingPickerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21F679381E1A42CA000321C6 /* Build configuration list for PBXNativeTarget "YQRatingPickerUITests" */;
+			buildPhases = (
+				21F679251E1A42CA000321C6 /* Sources */,
+				21F679261E1A42CA000321C6 /* Frameworks */,
+				21F679271E1A42CA000321C6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				21F6792B1E1A42CA000321C6 /* PBXTargetDependency */,
+			);
+			name = YQRatingPickerUITests;
+			productName = YQRatingPickerUITests;
+			productReference = 21F679291E1A42CA000321C6 /* YQRatingPickerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		21F678FD1E1A42C9000321C6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Wang;
+				TargetAttributes = {
+					21F679041E1A42C9000321C6 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = GP4MMMES25;
+						ProvisioningStyle = Automatic;
+					};
+					21F6791D1E1A42CA000321C6 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = GP4MMMES25;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 21F679041E1A42C9000321C6;
+					};
+					21F679281E1A42CA000321C6 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = GP4MMMES25;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 21F679041E1A42C9000321C6;
+					};
+				};
+			};
+			buildConfigurationList = 21F679001E1A42C9000321C6 /* Build configuration list for PBXProject "YQRatingPicker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 21F678FC1E1A42C9000321C6;
+			productRefGroup = 21F679061E1A42CA000321C6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				21F679041E1A42C9000321C6 /* YQRatingPicker */,
+				21F6791D1E1A42CA000321C6 /* YQRatingPickerTests */,
+				21F679281E1A42CA000321C6 /* YQRatingPickerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		21F679031E1A42C9000321C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21F679181E1A42CA000321C6 /* LaunchScreen.storyboard in Resources */,
+				21F679151E1A42CA000321C6 /* Assets.xcassets in Resources */,
+				21F679131E1A42CA000321C6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21F6791C1E1A42CA000321C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21F679271E1A42CA000321C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		21F679011E1A42C9000321C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21F679101E1A42CA000321C6 /* ViewController.m in Sources */,
+				21F6790D1E1A42CA000321C6 /* AppDelegate.m in Sources */,
+				21F6790A1E1A42CA000321C6 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21F6791A1E1A42CA000321C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21F679231E1A42CA000321C6 /* YQRatingPickerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21F679251E1A42CA000321C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21F6792E1E1A42CA000321C6 /* YQRatingPickerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		21F679201E1A42CA000321C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 21F679041E1A42C9000321C6 /* YQRatingPicker */;
+			targetProxy = 21F6791F1E1A42CA000321C6 /* PBXContainerItemProxy */;
+		};
+		21F6792B1E1A42CA000321C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 21F679041E1A42C9000321C6 /* YQRatingPicker */;
+			targetProxy = 21F6792A1E1A42CA000321C6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		21F679111E1A42CA000321C6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				21F679121E1A42CA000321C6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		21F679161E1A42CA000321C6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				21F679171E1A42CA000321C6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		21F679301E1A42CA000321C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		21F679311E1A42CA000321C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		21F679331E1A42CA000321C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GP4MMMES25;
+				INFOPLIST_FILE = YQRatingPicker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iqilu..YQRatingPicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		21F679341E1A42CA000321C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GP4MMMES25;
+				INFOPLIST_FILE = YQRatingPicker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iqilu..YQRatingPicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		21F679361E1A42CA000321C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = GP4MMMES25;
+				INFOPLIST_FILE = YQRatingPickerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iqilu..YQRatingPickerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YQRatingPicker.app/YQRatingPicker";
+			};
+			name = Debug;
+		};
+		21F679371E1A42CA000321C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = GP4MMMES25;
+				INFOPLIST_FILE = YQRatingPickerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iqilu..YQRatingPickerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YQRatingPicker.app/YQRatingPicker";
+			};
+			name = Release;
+		};
+		21F679391E1A42CA000321C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = GP4MMMES25;
+				INFOPLIST_FILE = YQRatingPickerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iqilu..YQRatingPickerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = YQRatingPicker;
+			};
+			name = Debug;
+		};
+		21F6793A1E1A42CA000321C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = GP4MMMES25;
+				INFOPLIST_FILE = YQRatingPickerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iqilu..YQRatingPickerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = YQRatingPicker;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		21F679001E1A42C9000321C6 /* Build configuration list for PBXProject "YQRatingPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21F679301E1A42CA000321C6 /* Debug */,
+				21F679311E1A42CA000321C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		21F679321E1A42CA000321C6 /* Build configuration list for PBXNativeTarget "YQRatingPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21F679331E1A42CA000321C6 /* Debug */,
+				21F679341E1A42CA000321C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		21F679351E1A42CA000321C6 /* Build configuration list for PBXNativeTarget "YQRatingPickerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21F679361E1A42CA000321C6 /* Debug */,
+				21F679371E1A42CA000321C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		21F679381E1A42CA000321C6 /* Build configuration list for PBXNativeTarget "YQRatingPickerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21F679391E1A42CA000321C6 /* Debug */,
+				21F6793A1E1A42CA000321C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 21F678FD1E1A42C9000321C6 /* Project object */;
+}
