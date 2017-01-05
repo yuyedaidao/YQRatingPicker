@@ -7,8 +7,10 @@
 //
 
 #import "ViewController.h"
+#import "YQRatingPicker.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet YQRatingPicker *ratingPicker;
 
 @end
 
@@ -19,6 +21,9 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 
+- (IBAction)showValueAction:(id)sender {
+    NSLog(@"value: %lf",self.ratingPicker.value);
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

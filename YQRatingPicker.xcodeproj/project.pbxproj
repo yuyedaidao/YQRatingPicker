@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		21EFFF541E1B8F6B005C0AC7 /* YQRatingPickerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 21EFFF521E1B8F6B005C0AC7 /* YQRatingPickerCell.m */; };
+		21EFFF551E1B8F6B005C0AC7 /* YQRatingPickerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 21EFFF521E1B8F6B005C0AC7 /* YQRatingPickerCell.m */; };
+		21EFFF561E1B8F6B005C0AC7 /* YQRatingPickerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 21EFFF521E1B8F6B005C0AC7 /* YQRatingPickerCell.m */; };
+		21EFFF571E1B8F6B005C0AC7 /* YQRatingPickerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21EFFF531E1B8F6B005C0AC7 /* YQRatingPickerCell.xib */; };
+		21EFFF581E1B8F6B005C0AC7 /* YQRatingPickerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21EFFF531E1B8F6B005C0AC7 /* YQRatingPickerCell.xib */; };
+		21EFFF591E1B8F6B005C0AC7 /* YQRatingPickerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21EFFF531E1B8F6B005C0AC7 /* YQRatingPickerCell.xib */; };
 		21F6790A1E1A42CA000321C6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F679091E1A42CA000321C6 /* main.m */; };
 		21F6790D1E1A42CA000321C6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F6790C1E1A42CA000321C6 /* AppDelegate.m */; };
 		21F679101E1A42CA000321C6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F6790F1E1A42CA000321C6 /* ViewController.m */; };
@@ -15,6 +21,12 @@
 		21F679181E1A42CA000321C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21F679161E1A42CA000321C6 /* LaunchScreen.storyboard */; };
 		21F679231E1A42CA000321C6 /* YQRatingPickerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F679221E1A42CA000321C6 /* YQRatingPickerTests.m */; };
 		21F6792E1E1A42CA000321C6 /* YQRatingPickerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F6792D1E1A42CA000321C6 /* YQRatingPickerUITests.m */; };
+		21F6793E1E1A4310000321C6 /* YQRatingPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F6793D1E1A4310000321C6 /* YQRatingPicker.m */; };
+		21F6793F1E1A4310000321C6 /* YQRatingPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F6793D1E1A4310000321C6 /* YQRatingPicker.m */; };
+		21F679401E1A4310000321C6 /* YQRatingPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F6793D1E1A4310000321C6 /* YQRatingPicker.m */; };
+		21F679431E1A5F1A000321C6 /* YQRatingPickerLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F679421E1A5F1A000321C6 /* YQRatingPickerLayout.m */; };
+		21F679441E1A5F1A000321C6 /* YQRatingPickerLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F679421E1A5F1A000321C6 /* YQRatingPickerLayout.m */; };
+		21F679451E1A5F1A000321C6 /* YQRatingPickerLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F679421E1A5F1A000321C6 /* YQRatingPickerLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +47,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		21EFFF511E1B8F6B005C0AC7 /* YQRatingPickerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YQRatingPickerCell.h; sourceTree = "<group>"; };
+		21EFFF521E1B8F6B005C0AC7 /* YQRatingPickerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YQRatingPickerCell.m; sourceTree = "<group>"; };
+		21EFFF531E1B8F6B005C0AC7 /* YQRatingPickerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YQRatingPickerCell.xib; sourceTree = "<group>"; };
 		21F679051E1A42CA000321C6 /* YQRatingPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YQRatingPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21F679091E1A42CA000321C6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		21F6790B1E1A42CA000321C6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +66,10 @@
 		21F679291E1A42CA000321C6 /* YQRatingPickerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YQRatingPickerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		21F6792D1E1A42CA000321C6 /* YQRatingPickerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YQRatingPickerUITests.m; sourceTree = "<group>"; };
 		21F6792F1E1A42CA000321C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21F6793C1E1A4310000321C6 /* YQRatingPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YQRatingPicker.h; sourceTree = "<group>"; };
+		21F6793D1E1A4310000321C6 /* YQRatingPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YQRatingPicker.m; sourceTree = "<group>"; };
+		21F679411E1A5F1A000321C6 /* YQRatingPickerLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YQRatingPickerLayout.h; sourceTree = "<group>"; };
+		21F679421E1A5F1A000321C6 /* YQRatingPickerLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YQRatingPickerLayout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +100,7 @@
 		21F678FC1E1A42C9000321C6 = {
 			isa = PBXGroup;
 			children = (
+				21F6793B1E1A42EE000321C6 /* Classes */,
 				21F679071E1A42CA000321C6 /* YQRatingPicker */,
 				21F679211E1A42CA000321C6 /* YQRatingPickerTests */,
 				21F6792C1E1A42CA000321C6 /* YQRatingPickerUITests */,
@@ -138,6 +158,20 @@
 				21F6792F1E1A42CA000321C6 /* Info.plist */,
 			);
 			path = YQRatingPickerUITests;
+			sourceTree = "<group>";
+		};
+		21F6793B1E1A42EE000321C6 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				21F6793C1E1A4310000321C6 /* YQRatingPicker.h */,
+				21F6793D1E1A4310000321C6 /* YQRatingPicker.m */,
+				21F679411E1A5F1A000321C6 /* YQRatingPickerLayout.h */,
+				21F679421E1A5F1A000321C6 /* YQRatingPickerLayout.m */,
+				21EFFF511E1B8F6B005C0AC7 /* YQRatingPickerCell.h */,
+				21EFFF521E1B8F6B005C0AC7 /* YQRatingPickerCell.m */,
+				21EFFF531E1B8F6B005C0AC7 /* YQRatingPickerCell.xib */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,6 +283,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21EFFF571E1B8F6B005C0AC7 /* YQRatingPickerCell.xib in Resources */,
 				21F679181E1A42CA000321C6 /* LaunchScreen.storyboard in Resources */,
 				21F679151E1A42CA000321C6 /* Assets.xcassets in Resources */,
 				21F679131E1A42CA000321C6 /* Main.storyboard in Resources */,
@@ -259,6 +294,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21EFFF581E1B8F6B005C0AC7 /* YQRatingPickerCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +302,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21EFFF591E1B8F6B005C0AC7 /* YQRatingPickerCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,8 +313,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21F6793E1E1A4310000321C6 /* YQRatingPicker.m in Sources */,
+				21F679431E1A5F1A000321C6 /* YQRatingPickerLayout.m in Sources */,
 				21F679101E1A42CA000321C6 /* ViewController.m in Sources */,
 				21F6790D1E1A42CA000321C6 /* AppDelegate.m in Sources */,
+				21EFFF541E1B8F6B005C0AC7 /* YQRatingPickerCell.m in Sources */,
 				21F6790A1E1A42CA000321C6 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,6 +326,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21EFFF551E1B8F6B005C0AC7 /* YQRatingPickerCell.m in Sources */,
+				21F6793F1E1A4310000321C6 /* YQRatingPicker.m in Sources */,
+				21F679441E1A5F1A000321C6 /* YQRatingPickerLayout.m in Sources */,
 				21F679231E1A42CA000321C6 /* YQRatingPickerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,6 +337,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21EFFF561E1B8F6B005C0AC7 /* YQRatingPickerCell.m in Sources */,
+				21F679401E1A4310000321C6 /* YQRatingPicker.m in Sources */,
+				21F679451E1A5F1A000321C6 /* YQRatingPickerLayout.m in Sources */,
 				21F6792E1E1A42CA000321C6 /* YQRatingPickerUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -429,6 +475,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = GP4MMMES25;
 				INFOPLIST_FILE = YQRatingPicker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.iqilu..YQRatingPicker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -441,6 +488,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = GP4MMMES25;
 				INFOPLIST_FILE = YQRatingPicker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.iqilu..YQRatingPicker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -516,6 +564,7 @@
 				21F679341E1A42CA000321C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		21F679351E1A42CA000321C6 /* Build configuration list for PBXNativeTarget "YQRatingPickerTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +573,7 @@
 				21F679371E1A42CA000321C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		21F679381E1A42CA000321C6 /* Build configuration list for PBXNativeTarget "YQRatingPickerUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +582,7 @@
 				21F6793A1E1A42CA000321C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
