@@ -9,7 +9,7 @@
 #import "YQRatingPickerLayout.h"
 
 static NSInteger const KVisibleCount = 5;
-static CGFloat const kMiddleItemWidthPercent = 0.3;
+//static CGFloat const kMiddleItemWidthPercent = 0.3;
 @interface YQRatingPickerLayout ()
 
 @property (assign, nonatomic) NSInteger count;
