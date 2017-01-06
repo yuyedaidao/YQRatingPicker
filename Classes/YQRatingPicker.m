@@ -52,11 +52,12 @@
         layout;
     });
     self.collectionView = [[UICollectionView alloc] initWithFrame:self.bounds collectionViewLayout:self.layout];
-    self.collectionView.backgroundColor = [UIColor redColor];
     self.collectionView.delegate = self;
     self.collectionView.dataSource = self;
     [self addSubview:self.collectionView];
-    
+    self.collectionView.backgroundColor = self.backgroundColor;
+    self.collectionView.showsHorizontalScrollIndicator = NO;
+    self.collectionView.showsVerticalScrollIndicator = NO;
     [self.collectionView registerNib:[UINib nibWithNibName:NSStringFromClass([YQRatingPickerCell class]) bundle:nil] forCellWithReuseIdentifier:NSStringFromClass([YQRatingPickerCell class])];
     
     self.collectionView.translatesAutoresizingMaskIntoConstraints = NO;
@@ -68,7 +69,8 @@
 
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return floor((self.maximumValue - self.minimumValue) / self.stepValue);
+    NSAssert(!((self.maximumValue - self.minimumValue) % self.stepValue), @"您设定的stepValue没法整除");
+    return (self.maximumValue - self.minimumValue) / self.stepValue + 1;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {

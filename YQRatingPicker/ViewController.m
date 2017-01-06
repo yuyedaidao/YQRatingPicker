@@ -22,7 +22,7 @@
 }
 
 - (IBAction)showValueAction:(id)sender {
-    NSLog(@"value: %lf",self.ratingPicker.value);
+    NSLog(@"value: %ld",self.ratingPicker.value);
 }
 
 - (void)didReceiveMemoryWarning {
