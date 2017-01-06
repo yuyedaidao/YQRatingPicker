@@ -7,12 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		21EB35FE1E1F781B00D94A20 /* YQRatingPickerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21EB35FD1E1F781B00D94A20 /* YQRatingPickerCell.xib */; };
 		21EFFF541E1B8F6B005C0AC7 /* YQRatingPickerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 21EFFF521E1B8F6B005C0AC7 /* YQRatingPickerCell.m */; };
 		21EFFF551E1B8F6B005C0AC7 /* YQRatingPickerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 21EFFF521E1B8F6B005C0AC7 /* YQRatingPickerCell.m */; };
 		21EFFF561E1B8F6B005C0AC7 /* YQRatingPickerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 21EFFF521E1B8F6B005C0AC7 /* YQRatingPickerCell.m */; };
-		21EFFF571E1B8F6B005C0AC7 /* YQRatingPickerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21EFFF531E1B8F6B005C0AC7 /* YQRatingPickerCell.xib */; };
-		21EFFF581E1B8F6B005C0AC7 /* YQRatingPickerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21EFFF531E1B8F6B005C0AC7 /* YQRatingPickerCell.xib */; };
-		21EFFF591E1B8F6B005C0AC7 /* YQRatingPickerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21EFFF531E1B8F6B005C0AC7 /* YQRatingPickerCell.xib */; };
 		21F6790A1E1A42CA000321C6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F679091E1A42CA000321C6 /* main.m */; };
 		21F6790D1E1A42CA000321C6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F6790C1E1A42CA000321C6 /* AppDelegate.m */; };
 		21F679101E1A42CA000321C6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F6790F1E1A42CA000321C6 /* ViewController.m */; };
@@ -47,9 +45,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		21EB35FD1E1F781B00D94A20 /* YQRatingPickerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YQRatingPickerCell.xib; sourceTree = "<group>"; };
 		21EFFF511E1B8F6B005C0AC7 /* YQRatingPickerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YQRatingPickerCell.h; sourceTree = "<group>"; };
 		21EFFF521E1B8F6B005C0AC7 /* YQRatingPickerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YQRatingPickerCell.m; sourceTree = "<group>"; };
-		21EFFF531E1B8F6B005C0AC7 /* YQRatingPickerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YQRatingPickerCell.xib; sourceTree = "<group>"; };
 		21F679051E1A42CA000321C6 /* YQRatingPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YQRatingPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21F679091E1A42CA000321C6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		21F6790B1E1A42CA000321C6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -97,9 +95,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		21EB35FC1E1F781B00D94A20 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				21EB35FD1E1F781B00D94A20 /* YQRatingPickerCell.xib */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		21F678FC1E1A42C9000321C6 = {
 			isa = PBXGroup;
 			children = (
+				21EB35FC1E1F781B00D94A20 /* Resources */,
 				21F6793B1E1A42EE000321C6 /* Classes */,
 				21F679071E1A42CA000321C6 /* YQRatingPicker */,
 				21F679211E1A42CA000321C6 /* YQRatingPickerTests */,
@@ -169,7 +176,6 @@
 				21F679421E1A5F1A000321C6 /* YQRatingPickerLayout.m */,
 				21EFFF511E1B8F6B005C0AC7 /* YQRatingPickerCell.h */,
 				21EFFF521E1B8F6B005C0AC7 /* YQRatingPickerCell.m */,
-				21EFFF531E1B8F6B005C0AC7 /* YQRatingPickerCell.xib */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -283,7 +289,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21EFFF571E1B8F6B005C0AC7 /* YQRatingPickerCell.xib in Resources */,
+				21EB35FE1E1F781B00D94A20 /* YQRatingPickerCell.xib in Resources */,
 				21F679181E1A42CA000321C6 /* LaunchScreen.storyboard in Resources */,
 				21F679151E1A42CA000321C6 /* Assets.xcassets in Resources */,
 				21F679131E1A42CA000321C6 /* Main.storyboard in Resources */,
@@ -294,7 +300,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21EFFF581E1B8F6B005C0AC7 /* YQRatingPickerCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,7 +307,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21EFFF591E1B8F6B005C0AC7 /* YQRatingPickerCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

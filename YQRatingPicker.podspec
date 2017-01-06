@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "YQRatingPicker"
-  s.version      = "0.0.3"
+  s.version      = "0.0.4"
   s.summary      = "打分"
 
   # This description is used to generate tags and improve search results.
@@ -103,7 +103,7 @@ Pod::Spec.new do |s|
   #  non-essential files like tests, examples and documentation.
   #
 
-  # s.resource  = "icon.png"
+  s.resources  = "Resources/*.xib"
   # s.resources = "Resources/*.png"
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
