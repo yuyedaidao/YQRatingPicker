@@ -11,6 +11,7 @@
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet YQRatingPicker *ratingPicker;
+@property (weak, nonatomic) IBOutlet UIView *redView;
 
 @end
 
@@ -19,6 +20,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    CATransform3D transform = CATransform3DIdentity;
+    transform.m34 = -1 / 500.0;
+    self.redView.layer.transform = CATransform3DRotate(transform, M_PI_4, 0, 1, 0);
 }
 
 - (IBAction)showValueAction:(id)sender {

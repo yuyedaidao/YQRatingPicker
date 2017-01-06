@@ -8,7 +8,8 @@
 
 #import "YQRatingPickerLayout.h"
 
-static NSInteger const KVisibleCount = 5;
+static NSInteger const KVisibleCount = 9;
+static CGFloat const KScaleMin = 0.7;
 //static CGFloat const kMiddleItemWidthPercent = 0.3;
 @interface YQRatingPickerLayout ()
 
@@ -29,7 +30,7 @@ static NSInteger const KVisibleCount = 5;
     CGFloat width = CGRectGetWidth(self.collectionView.frame);
     _itemWidth = floor(width / KVisibleCount);
     self.itemSize = CGSizeMake(_itemWidth, CGRectGetHeight(self.collectionView.frame));
-    self.collectionView.contentInset = UIEdgeInsetsMake(0, floor(width / 2 - _itemWidth/ 2), 0, floor(width / 2 - _itemWidth / 2));
+//    self.collectionView.contentInset = UIEdgeInsetsMake(0, floor(width / 2 - _itemWidth/ 2), 0, floor(width / 2 - _itemWidth / 2));
     self.minimumLineSpacing = 0;
 }
 
@@ -38,19 +39,36 @@ static NSInteger const KVisibleCount = 5;
     return size;
 }
 
-//- (NSArray<UICollectionViewLayoutAttributes *> *)layoutAttributesForElementsInRect:(CGRect)rect {
-//    CGFloat centerX = CGRectGetMidX(self.collectionView.bounds);
-//    NSMutableArray *array = [NSMutableArray array];
-//    NSLog(@"bounds :%@, offset :%lf", NSStringFromCGRect(self.collectionView.bounds), self.collectionView.contentOffset.x);
-//        //从0开始，不是从offset开始，所以
-//    super layou
-//    return array;
-//}
+- (NSArray<UICollectionViewLayoutAttributes *> *)layoutAttributesForElementsInRect:(CGRect)rect {
+    CGFloat centerX = CGRectGetMidX(self.collectionView.bounds);
+    NSMutableArray *array = [NSMutableArray array];
+    [[super layoutAttributesForElementsInRect:rect] enumerateObjectsUsingBlock:^(__kindof UICollectionViewLayoutAttributes * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        CGFloat distance = obj.center.x - centerX;
+        CATransform3D transform = CATransform3DIdentity;
+        if (ABS(distance) > _itemWidth / 2) {
+            if (ABS(distance) < CGRectGetMidX(self.collectionView.frame) - 1) {
+                transform.m34 = -1 / 500.0;
+                CGFloat delta = distance / CGRectGetMidX(self.collectionView.frame);
+                transform = CATransform3DRotate(transform, M_PI_2 * distance / CGRectGetMidX(self.collectionView.frame), 0, 1, 0);
+                CGFloat scale = (1 - ABS(delta)) * (1 - KScaleMin) + KScaleMin;
+                transform = CATransform3DScale(transform, scale, scale, 1);
+//                transform = CATransform3DTranslate(transform, _itemWidth * delta, 0, 0);
+                obj.transform3D = transform;
+                obj.hidden = NO;
+            } else {
+                obj.hidden = YES;
+            }
+        }
+        
+        [array addObject:obj];
+    }];
+    return array;
+}
 //- (UICollectionViewLayoutAttributes *)layoutAttributesForItemAtIndexPath:(NSIndexPath *)indexPath {
 //    return nil;
 //}
-//- (BOOL)shouldInvalidateLayoutForBoundsChange:(CGRect)newBounds {
-//    return YES;
-//}
+- (BOOL)shouldInvalidateLayoutForBoundsChange:(CGRect)newBounds {
+    return YES;
+}
 
 @end
