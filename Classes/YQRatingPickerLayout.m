@@ -9,15 +9,11 @@
 #import "YQRatingPickerLayout.h"
 
 static NSInteger const KVisibleCount = 9;
-static CGFloat const KScaleMin = 0.7;
-//static CGFloat const kMiddleItemWidthPercent = 0.3;
+static CGFloat const kAngle = M_PI_2;
+
 @interface YQRatingPickerLayout ()
 
 @property (assign, nonatomic) NSInteger count;
-/**
- 占位的cell的个数，只算一边的，其实真实占位数是placeholderCount * 2
- */
-//@property (assign, nonatomic) NSInteger placeholderCount;
 @property (assign, nonatomic) CGFloat itemWidth;
 
 @end
@@ -30,7 +26,7 @@ static CGFloat const KScaleMin = 0.7;
     CGFloat width = CGRectGetWidth(self.collectionView.frame);
     _itemWidth = floor(width / KVisibleCount);
     self.itemSize = CGSizeMake(_itemWidth, CGRectGetHeight(self.collectionView.frame));
-//    self.collectionView.contentInset = UIEdgeInsetsMake(0, floor(width / 2 - _itemWidth/ 2), 0, floor(width / 2 - _itemWidth / 2));
+    self.collectionView.contentInset = UIEdgeInsetsMake(0, floor(width / 2 - _itemWidth/ 2), 0, floor(width / 2 - _itemWidth / 2));
     self.minimumLineSpacing = 0;
 //    self.minimumInteritemSpacing = 0;
 }
@@ -46,19 +42,17 @@ static CGFloat const KScaleMin = 0.7;
     [[super layoutAttributesForElementsInRect:rect] enumerateObjectsUsingBlock:^(__kindof UICollectionViewLayoutAttributes * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         CGFloat distance = obj.center.x - centerX;
         CATransform3D transform = CATransform3DIdentity;
-//        if (ABS(distance) > _itemWidth / 2) {
-            if (ABS(distance) < CGRectGetMidX(self.collectionView.frame) - 1) {
-                CGFloat delta = distance / CGRectGetMidX(self.collectionView.frame);
-                transform = CATransform3DRotate(transform, M_PI_2 * distance / CGRectGetMidX(self.collectionView.frame), 0, 1, 0);
-//                CGFloat scale = (1 - ABS(delta)) * (1 - KScaleMin) + KScaleMin;
-//                transform = CATransform3DScale(transform, scale, scale, 1);
-                transform = CATransform3DTranslate(transform, _itemWidth * delta, 0, 0);
-                obj.transform3D = transform;
-                obj.hidden = NO;
-            } else {
-                obj.hidden = YES;
-            }
-//        }
+        CGFloat radius = CGRectGetMidX(self.collectionView.frame);
+        if (ABS(distance) < radius - 1) {
+            CGFloat delta = distance / radius;
+            transform = CATransform3DRotate(transform, kAngle * distance / CGRectGetMidX(self.collectionView.frame), 0, 1, 0);
+            CGFloat translate = radius * cos(kAngle * (1 - delta)) - distance;
+            transform = CATransform3DTranslate(transform, translate, 0, 0);
+            obj.transform3D = transform;
+            obj.hidden = NO;
+        } else {
+            obj.hidden = YES;
+        }
         
         [array addObject:obj];
     }];
