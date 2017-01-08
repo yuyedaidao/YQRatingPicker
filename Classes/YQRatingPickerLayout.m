@@ -32,6 +32,7 @@ static CGFloat const KScaleMin = 0.7;
     self.itemSize = CGSizeMake(_itemWidth, CGRectGetHeight(self.collectionView.frame));
 //    self.collectionView.contentInset = UIEdgeInsetsMake(0, floor(width / 2 - _itemWidth/ 2), 0, floor(width / 2 - _itemWidth / 2));
     self.minimumLineSpacing = 0;
+//    self.minimumInteritemSpacing = 0;
 }
 
 - (CGSize)collectionViewContentSize {
@@ -45,20 +46,19 @@ static CGFloat const KScaleMin = 0.7;
     [[super layoutAttributesForElementsInRect:rect] enumerateObjectsUsingBlock:^(__kindof UICollectionViewLayoutAttributes * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         CGFloat distance = obj.center.x - centerX;
         CATransform3D transform = CATransform3DIdentity;
-        if (ABS(distance) > _itemWidth / 2) {
+//        if (ABS(distance) > _itemWidth / 2) {
             if (ABS(distance) < CGRectGetMidX(self.collectionView.frame) - 1) {
-                transform.m34 = -1 / 500.0;
                 CGFloat delta = distance / CGRectGetMidX(self.collectionView.frame);
                 transform = CATransform3DRotate(transform, M_PI_2 * distance / CGRectGetMidX(self.collectionView.frame), 0, 1, 0);
-                CGFloat scale = (1 - ABS(delta)) * (1 - KScaleMin) + KScaleMin;
-                transform = CATransform3DScale(transform, scale, scale, 1);
-//                transform = CATransform3DTranslate(transform, _itemWidth * delta, 0, 0);
+//                CGFloat scale = (1 - ABS(delta)) * (1 - KScaleMin) + KScaleMin;
+//                transform = CATransform3DScale(transform, scale, scale, 1);
+                transform = CATransform3DTranslate(transform, _itemWidth * delta, 0, 0);
                 obj.transform3D = transform;
                 obj.hidden = NO;
             } else {
                 obj.hidden = YES;
             }
-        }
+//        }
         
         [array addObject:obj];
     }];

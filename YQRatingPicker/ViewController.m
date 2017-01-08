@@ -21,7 +21,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     CATransform3D transform = CATransform3DIdentity;
-    transform.m34 = -1 / 500.0;
+//    transform.m34 = -1 / 500.0;
     self.redView.layer.transform = CATransform3DRotate(transform, M_PI_4, 0, 1, 0);
 }
 

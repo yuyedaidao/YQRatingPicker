@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1636F7B09A89BC8EDCFD9C94 /* libPods-YQRatingPickerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E7F35011929A47C1B431C91A /* libPods-YQRatingPickerTests.a */; };
 		21EB35FE1E1F781B00D94A20 /* YQRatingPickerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21EB35FD1E1F781B00D94A20 /* YQRatingPickerCell.xib */; };
 		21EFFF541E1B8F6B005C0AC7 /* YQRatingPickerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 21EFFF521E1B8F6B005C0AC7 /* YQRatingPickerCell.m */; };
 		21EFFF551E1B8F6B005C0AC7 /* YQRatingPickerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 21EFFF521E1B8F6B005C0AC7 /* YQRatingPickerCell.m */; };
@@ -25,6 +26,8 @@
 		21F679431E1A5F1A000321C6 /* YQRatingPickerLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F679421E1A5F1A000321C6 /* YQRatingPickerLayout.m */; };
 		21F679441E1A5F1A000321C6 /* YQRatingPickerLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F679421E1A5F1A000321C6 /* YQRatingPickerLayout.m */; };
 		21F679451E1A5F1A000321C6 /* YQRatingPickerLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F679421E1A5F1A000321C6 /* YQRatingPickerLayout.m */; };
+		579B22D503B3482FE43559E3 /* libPods-YQRatingPickerUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C70EF38955FDC98AFBD76F6A /* libPods-YQRatingPickerUITests.a */; };
+		768235FC4B3DBD805A87313F /* libPods-YQRatingPicker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D21707E4EBE58EDC0D9DA78F /* libPods-YQRatingPicker.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C8314AC3805B2E39C17B2EB /* Pods-YQRatingPickerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YQRatingPickerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-YQRatingPickerUITests/Pods-YQRatingPickerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		0F596D4BBD5CC0F4C2CDA31B /* Pods-YQRatingPicker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YQRatingPicker.release.xcconfig"; path = "Pods/Target Support Files/Pods-YQRatingPicker/Pods-YQRatingPicker.release.xcconfig"; sourceTree = "<group>"; };
+		1D65148E7A6E313902A2C635 /* Pods-YQRatingPickerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YQRatingPickerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-YQRatingPickerTests/Pods-YQRatingPickerTests.release.xcconfig"; sourceTree = "<group>"; };
 		21EB35FD1E1F781B00D94A20 /* YQRatingPickerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YQRatingPickerCell.xib; sourceTree = "<group>"; };
 		21EFFF511E1B8F6B005C0AC7 /* YQRatingPickerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YQRatingPickerCell.h; sourceTree = "<group>"; };
 		21EFFF521E1B8F6B005C0AC7 /* YQRatingPickerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YQRatingPickerCell.m; sourceTree = "<group>"; };
@@ -68,6 +74,12 @@
 		21F6793D1E1A4310000321C6 /* YQRatingPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YQRatingPicker.m; sourceTree = "<group>"; };
 		21F679411E1A5F1A000321C6 /* YQRatingPickerLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YQRatingPickerLayout.h; sourceTree = "<group>"; };
 		21F679421E1A5F1A000321C6 /* YQRatingPickerLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YQRatingPickerLayout.m; sourceTree = "<group>"; };
+		6C17329E05B65943E40F22BA /* Pods-YQRatingPickerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YQRatingPickerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YQRatingPickerTests/Pods-YQRatingPickerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		ADBCC6868EC23053DF923E8A /* Pods-YQRatingPicker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YQRatingPicker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YQRatingPicker/Pods-YQRatingPicker.debug.xcconfig"; sourceTree = "<group>"; };
+		C0B19A14137FCC30D37564EA /* Pods-YQRatingPickerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YQRatingPickerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YQRatingPickerUITests/Pods-YQRatingPickerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C70EF38955FDC98AFBD76F6A /* libPods-YQRatingPickerUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YQRatingPickerUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D21707E4EBE58EDC0D9DA78F /* libPods-YQRatingPicker.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YQRatingPicker.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7F35011929A47C1B431C91A /* libPods-YQRatingPickerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YQRatingPickerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				768235FC4B3DBD805A87313F /* libPods-YQRatingPicker.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1636F7B09A89BC8EDCFD9C94 /* libPods-YQRatingPickerTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,12 +103,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				579B22D503B3482FE43559E3 /* libPods-YQRatingPickerUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		119EA3794980760F611EEA26 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ADBCC6868EC23053DF923E8A /* Pods-YQRatingPicker.debug.xcconfig */,
+				0F596D4BBD5CC0F4C2CDA31B /* Pods-YQRatingPicker.release.xcconfig */,
+				6C17329E05B65943E40F22BA /* Pods-YQRatingPickerTests.debug.xcconfig */,
+				1D65148E7A6E313902A2C635 /* Pods-YQRatingPickerTests.release.xcconfig */,
+				C0B19A14137FCC30D37564EA /* Pods-YQRatingPickerUITests.debug.xcconfig */,
+				0C8314AC3805B2E39C17B2EB /* Pods-YQRatingPickerUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		21EB35FC1E1F781B00D94A20 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +140,8 @@
 				21F679211E1A42CA000321C6 /* YQRatingPickerTests */,
 				21F6792C1E1A42CA000321C6 /* YQRatingPickerUITests */,
 				21F679061E1A42CA000321C6 /* Products */,
+				119EA3794980760F611EEA26 /* Pods */,
+				4E55A59F06618BAA54872EB7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -180,6 +210,16 @@
 			path = Classes;
 			sourceTree = "<group>";
 		};
+		4E55A59F06618BAA54872EB7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D21707E4EBE58EDC0D9DA78F /* libPods-YQRatingPicker.a */,
+				E7F35011929A47C1B431C91A /* libPods-YQRatingPickerTests.a */,
+				C70EF38955FDC98AFBD76F6A /* libPods-YQRatingPickerUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -187,9 +227,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 21F679321E1A42CA000321C6 /* Build configuration list for PBXNativeTarget "YQRatingPicker" */;
 			buildPhases = (
+				5298C9CAED0849DAB8B3F937 /* [CP] Check Pods Manifest.lock */,
 				21F679011E1A42C9000321C6 /* Sources */,
 				21F679021E1A42C9000321C6 /* Frameworks */,
 				21F679031E1A42C9000321C6 /* Resources */,
+				43013124C1CDBEDAA4389E34 /* [CP] Embed Pods Frameworks */,
+				2BC217A26A48CA4D17D991DA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -204,9 +247,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 21F679351E1A42CA000321C6 /* Build configuration list for PBXNativeTarget "YQRatingPickerTests" */;
 			buildPhases = (
+				1797C5AECDC9B515CE0A0766 /* [CP] Check Pods Manifest.lock */,
 				21F6791A1E1A42CA000321C6 /* Sources */,
 				21F6791B1E1A42CA000321C6 /* Frameworks */,
 				21F6791C1E1A42CA000321C6 /* Resources */,
+				DA98D8745E2C61038195B97E /* [CP] Embed Pods Frameworks */,
+				B8E4FD64DDBD8683640846F6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -222,9 +268,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 21F679381E1A42CA000321C6 /* Build configuration list for PBXNativeTarget "YQRatingPickerUITests" */;
 			buildPhases = (
+				3C0A4DB856D37C35418D312B /* [CP] Check Pods Manifest.lock */,
 				21F679251E1A42CA000321C6 /* Sources */,
 				21F679261E1A42CA000321C6 /* Frameworks */,
 				21F679271E1A42CA000321C6 /* Resources */,
+				3D293E2A62841F64EA2CEE07 /* [CP] Embed Pods Frameworks */,
+				365A6A1455F1D400C6AE09BC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -311,6 +360,144 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1797C5AECDC9B515CE0A0766 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2BC217A26A48CA4D17D991DA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YQRatingPicker/Pods-YQRatingPicker-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		365A6A1455F1D400C6AE09BC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YQRatingPickerUITests/Pods-YQRatingPickerUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3C0A4DB856D37C35418D312B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3D293E2A62841F64EA2CEE07 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YQRatingPickerUITests/Pods-YQRatingPickerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		43013124C1CDBEDAA4389E34 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YQRatingPicker/Pods-YQRatingPicker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5298C9CAED0849DAB8B3F937 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B8E4FD64DDBD8683640846F6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YQRatingPickerTests/Pods-YQRatingPickerTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA98D8745E2C61038195B97E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YQRatingPickerTests/Pods-YQRatingPickerTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		21F679011E1A42C9000321C6 /* Sources */ = {
@@ -475,6 +662,7 @@
 		};
 		21F679331E1A42CA000321C6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADBCC6868EC23053DF923E8A /* Pods-YQRatingPicker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = GP4MMMES25;
@@ -488,6 +676,7 @@
 		};
 		21F679341E1A42CA000321C6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F596D4BBD5CC0F4C2CDA31B /* Pods-YQRatingPicker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = GP4MMMES25;
@@ -501,6 +690,7 @@
 		};
 		21F679361E1A42CA000321C6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C17329E05B65943E40F22BA /* Pods-YQRatingPickerTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = GP4MMMES25;
@@ -514,6 +704,7 @@
 		};
 		21F679371E1A42CA000321C6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D65148E7A6E313902A2C635 /* Pods-YQRatingPickerTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = GP4MMMES25;
@@ -527,6 +718,7 @@
 		};
 		21F679391E1A42CA000321C6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0B19A14137FCC30D37564EA /* Pods-YQRatingPickerUITests.debug.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = GP4MMMES25;
 				INFOPLIST_FILE = YQRatingPickerUITests/Info.plist;
@@ -539,6 +731,7 @@
 		};
 		21F6793A1E1A42CA000321C6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C8314AC3805B2E39C17B2EB /* Pods-YQRatingPickerUITests.release.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = GP4MMMES25;
 				INFOPLIST_FILE = YQRatingPickerUITests/Info.plist;
