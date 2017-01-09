@@ -13,9 +13,6 @@ static CGFloat const kAngle = M_PI_2;
 
 @interface YQRatingPickerLayout ()
 
-@property (assign, nonatomic) NSInteger count;
-@property (assign, nonatomic) CGFloat itemWidth;
-
 @end
 
 @implementation YQRatingPickerLayout
@@ -24,11 +21,14 @@ static CGFloat const kAngle = M_PI_2;
     [super prepareLayout];
     self.count = [self.collectionView numberOfItemsInSection:0];
     CGFloat width = CGRectGetWidth(self.collectionView.frame);
-    _itemWidth = floor(width / KVisibleCount);
+    _itemWidth = width / KVisibleCount;
     self.itemSize = CGSizeMake(_itemWidth, CGRectGetHeight(self.collectionView.frame));
-    self.collectionView.contentInset = UIEdgeInsetsMake(0, floor(width / 2 - _itemWidth/ 2), 0, floor(width / 2 - _itemWidth / 2));
+    CGFloat insetLR = (width - _itemWidth) / 2;
+    self.collectionView.contentInset = UIEdgeInsetsMake(0, insetLR, 0, insetLR);
     self.minimumLineSpacing = 0;
-//    self.minimumInteritemSpacing = 0;
+    if ([self.delegate respondsToSelector:@selector(yq_didPrepareLayout:)]) {
+        [self.delegate yq_didPrepareLayout:self];
+    }
 }
 
 - (CGSize)collectionViewContentSize {
@@ -42,6 +42,7 @@ static CGFloat const kAngle = M_PI_2;
     [[super layoutAttributesForElementsInRect:rect] enumerateObjectsUsingBlock:^(__kindof UICollectionViewLayoutAttributes * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         CGFloat distance = obj.center.x - centerX;
         CATransform3D transform = CATransform3DIdentity;
+//        if (ABS(distance) > _itemWidth / 2) {
         CGFloat radius = CGRectGetMidX(self.collectionView.frame);
         if (ABS(distance) < radius - 1) {
             CGFloat delta = distance / radius;
