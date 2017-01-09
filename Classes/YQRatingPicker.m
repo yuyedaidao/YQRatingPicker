@@ -79,11 +79,10 @@ static CGFloat const kMiddleLineOffsetAdjust = 5.0f;
      */
     self.gradientLayer = ({
         CAGradientLayer *gradientLayer = [CAGradientLayer layer];
-        gradientLayer.colors = @[(__bridge id)[[UIColor grayColor] colorWithAlphaComponent:0.4].CGColor, (__bridge id)[[UIColor grayColor] colorWithAlphaComponent:1].CGColor,(__bridge id)[[UIColor grayColor] colorWithAlphaComponent:0.4].CGColor];
+        gradientLayer.colors = @[(__bridge id)[[UIColor grayColor] colorWithAlphaComponent:0.3].CGColor, (__bridge id)[[UIColor grayColor] colorWithAlphaComponent:1].CGColor,(__bridge id)[[UIColor grayColor] colorWithAlphaComponent:0.3].CGColor];
         gradientLayer.startPoint = CGPointMake(0, 0.5);
         gradientLayer.endPoint = CGPointMake(1, 0.5);
-        gradientLayer.locations = @[@(0), @(0.5),@(1)];
-//        [self.layer addSublayer:gradientLayer];
+        gradientLayer.locations = @[@(0), @(0.5), @(1)];
         self.layer.mask = gradientLayer;
         gradientLayer;
     });
@@ -96,12 +95,20 @@ static CGFloat const kMiddleLineOffsetAdjust = 5.0f;
         [lines addObject:line];
     }
     self.lines = lines;
+
 }
 
 #pragma mark - override
 - (void)layoutSubviews {
     [super layoutSubviews];
     self.gradientLayer.frame = self.layer.bounds;
+    NSInteger v = self.value;
+    NSInteger m = self.minimumValue;
+    NSInteger s = self.stepValue;
+    dispatch_async(dispatch_get_main_queue(), ^{
+        NSInteger targetIndex = (v - m) / s;
+        [self.collectionView setContentOffset:CGPointMake(targetIndex * self.layout.itemWidth - self.collectionView.contentInset.left, 0)];
+    });
 }
 
 #pragma mark - delete yqratingpicker
@@ -126,10 +133,7 @@ static CGFloat const kMiddleLineOffsetAdjust = 5.0f;
 }
 
 - (void)scrollViewWillEndDragging:(UIScrollView *)scrollView withVelocity:(CGPoint)velocity targetContentOffset:(inout CGPoint *)targetContentOffset {
-    NSInteger count = (*targetContentOffset).x / self.layout.itemWidth;
-//    CGFloat distanceLeft = count * self.layout.itemSize.width - (*targetContentOffset).x;
-//    CGFloat distanceRight = (count + 1) * self.layout.itemSize.width - (*targetContentOffset).x;
-//    *targetContentOffset = CGPointMake((*targetContentOffset).x + (ABS(distanceLeft) > ABS(distanceRight) ? distanceRight : distanceLeft), 0);
+    NSInteger count = round((*targetContentOffset).x / self.layout.itemWidth);
     (*targetContentOffset).x = count * self.layout.itemWidth;
 }
 

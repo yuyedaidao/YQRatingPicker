@@ -23,6 +23,11 @@
     CATransform3D transform = CATransform3DIdentity;
 //    transform.m34 = -1 / 500.0;
     self.redView.layer.transform = CATransform3DRotate(transform, M_PI_4, 0, 1, 0);
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//        self.ratingPicker.value = 5;
+//    });
+//    self.ratingPicker.value = 7;
+    
 }
 
 - (IBAction)showValueAction:(id)sender {
