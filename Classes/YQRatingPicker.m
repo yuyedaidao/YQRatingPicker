@@ -51,7 +51,7 @@
 
 - (void)commonInit {
     
-    self.currentIndex = -1;
+    _currentIndex = -1;
     self.layout = ({
         YQRatingPickerLayout *layout = [[YQRatingPickerLayout alloc] init];
         layout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
@@ -110,6 +110,7 @@
     NSInteger s = self.stepValue;
     dispatch_async(dispatch_get_main_queue(), ^{
         NSInteger targetIndex = (v - m) / s;
+        _currentIndex = targetIndex;
         [self.collectionView setContentOffset:CGPointMake(targetIndex * self.layout.itemWidth - self.collectionView.contentInset.left, 0)];
     });
 }
@@ -152,8 +153,8 @@
 }
 
 - (void)setIndexWithScrollView:(UIScrollView *)scrollView {
-    self.magnifyingView.offsetX = scrollView.contentInset.left;
-    [self.magnifyingView setNeedsDisplay];
+//    self.magnifyingView.offsetX = scrollView.contentInset.left;
+//    [self.magnifyingView setNeedsDisplay];
     self.currentIndex = (scrollView.contentOffset.x + scrollView.contentInset.left + self.layout.itemSize.width / 2) / self.layout.itemSize.width;
 }
 
@@ -162,12 +163,12 @@
         _currentIndex = currentIndex;
         YQRatingPickerCell *cell = (YQRatingPickerCell *)[self.collectionView cellForItemAtIndexPath:[NSIndexPath indexPathForItem:currentIndex inSection:0]];
         if (cell) {
-            _value = cell.value;
-        } else {
-            _value = self.minimumValue;
+            if (self.valueChangedBlock && _value != cell.value) {
+                _value = cell.value;
+                self.valueChangedBlock(_value);
+            }
         }
     }
 }
-
 
 @end

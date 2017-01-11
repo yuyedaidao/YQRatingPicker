@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "YQRatingPicker"
-  s.version      = "0.0.7"
+  s.version      = "0.0.8"
   s.summary      = "打分"
 
   # This description is used to generate tags and improve search results.

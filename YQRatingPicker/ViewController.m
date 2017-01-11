@@ -28,6 +28,9 @@
 //        self.ratingPicker.value = 5;
 //    });
 //    self.ratingPicker.value = 7;
+    [self.ratingPicker setValueChangedBlock:^(NSInteger value) {
+        NSLog(@"new value:%ld",value);
+    }];
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(4 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
          UIGraphicsBeginImageContext(self.view.bounds.size);
         CGContextRef context = UIGraphicsGetCurrentContext();//获取的是当前view的图形上下文

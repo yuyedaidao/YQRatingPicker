@@ -17,6 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (assign, nonatomic) IBInspectable NSInteger maximumValue;                 // default 100. must be greater than minimumValue
 @property (assign, nonatomic) IBInspectable NSInteger stepValue;
 
+@property (copy, nonatomic) void (^valueChangedBlock)(NSInteger value);
 @end
 
 NS_ASSUME_NONNULL_END
