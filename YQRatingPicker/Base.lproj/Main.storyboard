@@ -38,6 +38,7 @@
                             </datePicker>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xb4-vO-hGl" customClass="YQRatingPicker">
                                 <rect key="frame" x="96" y="357" width="163" height="60"/>
+                                <color key="backgroundColor" red="0.9529411793" green="0.68627452850000004" blue="0.13333334029999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="YjO-z1-ald"/>
                                 </constraints>
@@ -84,6 +85,13 @@
                                     <constraint firstAttribute="height" constant="40" id="9Nx-Lj-niv"/>
                                 </constraints>
                             </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0rQ-6M-Hme">
+                                <rect key="frame" x="308" y="526" width="64" height="115"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="115" id="TNg-pe-jEJ"/>
+                                    <constraint firstAttribute="width" constant="64" id="X7u-Ut-R5i"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -98,15 +106,18 @@
                             <constraint firstItem="VND-5F-C9n" firstAttribute="width" secondItem="Sje-Rw-zIh" secondAttribute="width" id="Uod-CR-usf"/>
                             <constraint firstItem="Xb4-vO-hGl" firstAttribute="top" secondItem="Sje-Rw-zIh" secondAttribute="bottom" constant="113" id="Vly-xc-4su"/>
                             <constraint firstItem="Xb4-vO-hGl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="80" id="f1J-M2-9c3"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="0rQ-6M-Hme" secondAttribute="bottom" constant="26" id="mzn-Jv-bbN"/>
                             <constraint firstItem="VND-5F-C9n" firstAttribute="centerX" secondItem="Sje-Rw-zIh" secondAttribute="centerX" id="pZC-R8-Kwt"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="QFo-8B-iQM" secondAttribute="bottom" constant="60" id="q0u-iz-MyW"/>
                             <constraint firstItem="lCw-E5-I4Y" firstAttribute="top" secondItem="Xb4-vO-hGl" secondAttribute="bottom" constant="54" id="qbx-7c-NIq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0rQ-6M-Hme" secondAttribute="trailing" constant="-13" id="tJj-tx-2ke"/>
                             <constraint firstItem="VND-5F-C9n" firstAttribute="top" secondItem="Sje-Rw-zIh" secondAttribute="bottom" constant="-1" id="vvl-PX-OEU"/>
                             <constraint firstItem="JSF-em-hrR" firstAttribute="centerX" secondItem="QFo-8B-iQM" secondAttribute="centerX" id="whk-Yu-rBQ"/>
                             <constraint firstItem="Sje-Rw-zIh" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="ytN-Xw-zks"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="imgView" destination="0rQ-6M-Hme" id="qeH-rJ-3bH"/>
                         <outlet property="ratingPicker" destination="Xb4-vO-hGl" id="KSQ-GG-Nb1"/>
                         <outlet property="redView" destination="QFo-8B-iQM" id="JYi-4h-eH1"/>
                     </connections>

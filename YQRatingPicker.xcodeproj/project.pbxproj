@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		1636F7B09A89BC8EDCFD9C94 /* libPods-YQRatingPickerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E7F35011929A47C1B431C91A /* libPods-YQRatingPickerTests.a */; };
+		21008A591E24CAD10021484E /* YQRatingMagnifying.m in Sources */ = {isa = PBXBuildFile; fileRef = 21008A581E24CAD10021484E /* YQRatingMagnifying.m */; };
+		21008A5A1E24CAD10021484E /* YQRatingMagnifying.m in Sources */ = {isa = PBXBuildFile; fileRef = 21008A581E24CAD10021484E /* YQRatingMagnifying.m */; };
+		21008A5B1E24CAD10021484E /* YQRatingMagnifying.m in Sources */ = {isa = PBXBuildFile; fileRef = 21008A581E24CAD10021484E /* YQRatingMagnifying.m */; };
 		21EB35FE1E1F781B00D94A20 /* YQRatingPickerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21EB35FD1E1F781B00D94A20 /* YQRatingPickerCell.xib */; };
 		21EFFF541E1B8F6B005C0AC7 /* YQRatingPickerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 21EFFF521E1B8F6B005C0AC7 /* YQRatingPickerCell.m */; };
 		21EFFF551E1B8F6B005C0AC7 /* YQRatingPickerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 21EFFF521E1B8F6B005C0AC7 /* YQRatingPickerCell.m */; };
@@ -51,6 +54,8 @@
 		0C8314AC3805B2E39C17B2EB /* Pods-YQRatingPickerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YQRatingPickerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-YQRatingPickerUITests/Pods-YQRatingPickerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		0F596D4BBD5CC0F4C2CDA31B /* Pods-YQRatingPicker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YQRatingPicker.release.xcconfig"; path = "Pods/Target Support Files/Pods-YQRatingPicker/Pods-YQRatingPicker.release.xcconfig"; sourceTree = "<group>"; };
 		1D65148E7A6E313902A2C635 /* Pods-YQRatingPickerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YQRatingPickerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-YQRatingPickerTests/Pods-YQRatingPickerTests.release.xcconfig"; sourceTree = "<group>"; };
+		21008A571E24CAD10021484E /* YQRatingMagnifying.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YQRatingMagnifying.h; sourceTree = "<group>"; };
+		21008A581E24CAD10021484E /* YQRatingMagnifying.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YQRatingMagnifying.m; sourceTree = "<group>"; };
 		21EB35FD1E1F781B00D94A20 /* YQRatingPickerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YQRatingPickerCell.xib; sourceTree = "<group>"; };
 		21EFFF511E1B8F6B005C0AC7 /* YQRatingPickerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YQRatingPickerCell.h; sourceTree = "<group>"; };
 		21EFFF521E1B8F6B005C0AC7 /* YQRatingPickerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YQRatingPickerCell.m; sourceTree = "<group>"; };
@@ -206,6 +211,8 @@
 				21F679421E1A5F1A000321C6 /* YQRatingPickerLayout.m */,
 				21EFFF511E1B8F6B005C0AC7 /* YQRatingPickerCell.h */,
 				21EFFF521E1B8F6B005C0AC7 /* YQRatingPickerCell.m */,
+				21008A571E24CAD10021484E /* YQRatingMagnifying.h */,
+				21008A581E24CAD10021484E /* YQRatingMagnifying.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -506,6 +513,7 @@
 			files = (
 				21F6793E1E1A4310000321C6 /* YQRatingPicker.m in Sources */,
 				21F679431E1A5F1A000321C6 /* YQRatingPickerLayout.m in Sources */,
+				21008A591E24CAD10021484E /* YQRatingMagnifying.m in Sources */,
 				21F679101E1A42CA000321C6 /* ViewController.m in Sources */,
 				21F6790D1E1A42CA000321C6 /* AppDelegate.m in Sources */,
 				21EFFF541E1B8F6B005C0AC7 /* YQRatingPickerCell.m in Sources */,
@@ -521,6 +529,7 @@
 				21F6793F1E1A4310000321C6 /* YQRatingPicker.m in Sources */,
 				21F679441E1A5F1A000321C6 /* YQRatingPickerLayout.m in Sources */,
 				21F679231E1A42CA000321C6 /* YQRatingPickerTests.m in Sources */,
+				21008A5A1E24CAD10021484E /* YQRatingMagnifying.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -532,6 +541,7 @@
 				21F679401E1A4310000321C6 /* YQRatingPicker.m in Sources */,
 				21F679451E1A5F1A000321C6 /* YQRatingPickerLayout.m in Sources */,
 				21F6792E1E1A42CA000321C6 /* YQRatingPickerUITests.m in Sources */,
+				21008A5B1E24CAD10021484E /* YQRatingMagnifying.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
